@@ -1,0 +1,30 @@
+
+
+<h1>Contacts</h1>
+
+<%if @contacts.blank? %>
+<h3>Please add an address</h3>
+<%= link_to 'Edit contact info', new_contact_path %>
+<%else%>
+<table>
+  <thead>
+    <tr>
+      <th>Contacttype</th>
+      <th>Contactbody</th>
+    
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.contactType %></td>
+        <td><%= contact.contactBody %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%end%>

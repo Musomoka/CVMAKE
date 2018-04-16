@@ -1,0 +1,28 @@
+
+<h1>Skills</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Skillname</th>
+      <th>Skill</th>
+      <th>Description</th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @skills.each do |skill| %>
+      <tr>
+        <td><%= skill.skillName %></td>
+        <td><%= skill.skill %></td>
+        <td><%= skill.description %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Skill', new_skill_path %>

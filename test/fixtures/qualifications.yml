@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  institution: MyString
+  fieldofStudy: MyString
+  qualificationType: MyString
+  completed: false
+  lengthofQualificatin: MyString
+  yearOfStudy: MyString
+
+two:
+  institution: MyString
+  fieldofStudy: MyString
+  qualificationType: MyString
+  completed: false
+  lengthofQualificatin: MyString
+  yearOfStudy: MyString
